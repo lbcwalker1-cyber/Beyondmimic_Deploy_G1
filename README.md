@@ -1,6 +1,24 @@
 # Beyondmimic_sim2sim
 Sim2sim based on Unitree_rl_gym.
 
+# 模型说明 / Model Description
+
+本项目是基于 **BeyondMimic** 动作模仿算法，针对 **Unitree G1** 人形机器人实现的 sim2sim 及 sim2real 部署框架。
+
+| 项目 | 说明 |
+|------|------|
+| 机器人型号 | Unitree G1 人形机器人 |
+| 强化学习算法 | BeyondMimic（whole_body_tracking） |
+| 训练配置 | Tracking-Flat-G1-Wo-State-Estimation-v0（不带状态估计） |
+| 观测空间维度 | 154 维 |
+| 动作空间维度 | 29 个关节 |
+| 策略模型格式 | ONNX（policy_zuiwu_48000.onnx，"zuiwu"= 醉舞 drunken-dance style，48000 = training iteration） |
+| 参考动作数据集 | LAFAN，dance2_subject4 动作片段 |
+
+> This project is a sim2sim / sim2real deployment framework for the **Unitree G1** humanoid robot, based on the **BeyondMimic** motion-imitation reinforcement-learning algorithm.
+> The provided policy (`policy_zuiwu_48000.onnx`, where *zuiwu* (醉舞) means "drunken dance" and *48000* is the training iteration) was trained with the `Tracking-Flat-G1-Wo-State-Estimation-v0` configuration (no state estimation), using a dance motion clip from the LAFAN dataset.
+> Observation space: **154-dim**. Action space: **29 joints**. Policy format: **ONNX**.
+
 # 基于Unitree_rl_gym搭的beyondmimic复现
 
 
