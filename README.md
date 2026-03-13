@@ -34,6 +34,15 @@ Sim2sim based on Unitree_rl_gym.
 这种训练方式的状态空间维度为154维。
 如果希望使用原本的配置来进行测试，请在anchorori的obs前增加三维度的相对位置，以及在angvel前增加三维度的根坐标系速度。
 
+# GitHub Copilot 模型配置说明
+
+如果在 PyCharm 的 GitHub Copilot 插件中找不到 **Claude Sonnet 4.5** 模型，请参阅 [`.github/copilot-instructions.md`](.github/copilot-instructions.md) 了解详细原因和解决方法。
+
+常见原因：
+- 需要 GitHub Copilot Business 或 Enterprise 订阅
+- PyCharm Copilot 插件版本过旧，请在 *Settings → Plugins* 中更新
+- 组织管理员限制了可用模型，需联系管理员在 *Organization Settings → Copilot → Policies* 中启用
+
 # Acknowledgement：
 [1] Beyondmimic训练源码：https://github.com/HybridRobotics/whole_body_tracking
 
